@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Monasans";
+  src: url(assets/fonts/monasans.woff2);
+}
+@font-face {
+  font-family: "Modern Negra";
+  src: url(assets/fonts/modernNegra.ttf);
+}
+
+@theme{
+  --font-monasans:"Monasans",sans-serif;
+  --font-modern-negra:"Modern Negra",sans-serif;
+}
+.container{
+  @apply max-w-[1400px] m-auto px-5
+}
+body{
+  font-family: "Monasans",sans-serif;
+}
+.linear-bg{
+    color: transparent;
+    background: linear-gradient(0deg,#898989 50%,white);
+    background-clip: text;
+}
