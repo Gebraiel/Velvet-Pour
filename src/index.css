@@ -19,7 +19,7 @@
 body{
   font-family: "Monasans",sans-serif;
 }
-.linear-bg{
+.linear-bg div{
     color: transparent;
     background: linear-gradient(0deg,#898989 50%,white);
     background-clip: text;
