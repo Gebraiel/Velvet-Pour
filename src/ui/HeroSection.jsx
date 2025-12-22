@@ -87,11 +87,24 @@ export default function HeroSection() {
             scrollTrigger:'.cocktail.right-to-left',
             opacity:0,
             stagger:0.1,
-            duration:0.7
+            duration:0.7,
+
         })
         gsap.from(".left-leaf",{
             x:-200,
-            y:200
+            y:200,
+            scrollTrigger:{
+                target:".left-leaf",
+                scrub:true
+            }
+        })
+         gsap.from(".right-leaf",{
+            x:200,
+            y:200,
+            scrollTrigger:{
+                target:".left-leaf",
+                scrub:true
+            }
         })
         videoRef.current.addEventListener("loadedmetadata",()=>{
             console.log(videoRef.current.duration);
