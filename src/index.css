@@ -24,3 +24,17 @@ body{
     background: linear-gradient(0deg,#898989 50%,white);
     background-clip: text;
 }
+.masked-image{
+  mask-image: url('../public/Features/mask-img.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size:contain;
+}
+.features-section{
+  background: radial-gradient(
+  circle,
+   rgba(255, 255, 255, 0.06) 0%,
+  rgba(0, 0, 0, 0.65) 5%,
+  #000 40%
+);
+}
