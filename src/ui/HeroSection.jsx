@@ -143,7 +143,7 @@ export default function HeroSection() {
             </div>
         </div>
 
-        <div className='container z-1 relative h-screen cocktails-section'>
+        <div className='container z-1 relative h-screen cocktails-section flex justify-center items-center'>
             <div className='flex sm:flex-row flex-col justify-between gap-10 w-full'>
                 <div className='left-menu lg:w-1/4 sm:w-1/2 w-full'>
                     <b className='text-white text-2xl'>Most Popular Cocktails:</b>

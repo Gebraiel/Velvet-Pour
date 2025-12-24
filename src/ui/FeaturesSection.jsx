@@ -43,7 +43,7 @@ export default function FeaturesSection() {
     )
   })
   return (
-        <section ref={featuresSection} className='features-section h-screen bg-black py-30 flex justify-center items-center'>
+        <section ref={featuresSection} className='radial-bg features-section h-screen bg-black py-30 flex justify-center items-center'>
             <div className='container'>
                 <h1 className='big-title text-center text-[#505050] font-modern-negra text-[clamp(6rem,1.5441rem_+_19.0118vw,31.25rem)] mt-10 whitespace-nowrap leading-0 absolute left-1/2 -translate-x-1/2'>The ART</h1>
                 <div className='text-white grid md:grid-cols-[auto_1fr_auto] grid-cols-2 gap-5 justify-between items-center z-1'>
