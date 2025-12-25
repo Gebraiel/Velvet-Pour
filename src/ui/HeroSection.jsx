@@ -128,7 +128,7 @@ export default function HeroSection() {
         <NoisyBg/>
         <div className='container z-1 relative h-screen'>
             <div className='py-20 text-white h-full flex flex-col justify-between'>
-                <h1 className='text-[clamp(6.25rem,1.8382rem_+_18.8235vw,31.25rem)] hero-title uppercase font-modern-negra text-center linear-bg leading-none mt-20'>Mojito</h1>
+                <h1 className='text-[clamp(5rem,1.4706rem_+_15.0588vw,25rem)] leading-0 hero-title uppercase font-modern-negra text-center linear-bg leading-none mt-20'>Mojito</h1>
                 <div className='flex sm:flex-row flex-col justify-between'>
                     <div className='left-content opacity-100 max-w-xs'>
                         <p className=''>Cool. Crisp. Classic</p>
