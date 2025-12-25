@@ -25,6 +25,7 @@ export default function FeaturesSection() {
     })
     tl.to(".big-title,.features-list",{
       height:0,
+      display:"none"
     })
     .fromTo(
       '.masked-image',
@@ -45,8 +46,8 @@ export default function FeaturesSection() {
   return (
         <section ref={featuresSection} className='radial-bg features-section h-screen bg-black py-30 flex justify-center items-center'>
             <div className='container'>
-                <h1 className='big-title text-center text-[#505050] font-modern-negra text-[clamp(6rem,1.5441rem_+_19.0118vw,31.25rem)] mt-10 whitespace-nowrap leading-0 absolute left-1/2 -translate-x-1/2'>The ART</h1>
-                <div className='text-white grid md:grid-cols-[auto_1fr_auto] grid-cols-2 gap-5 justify-between items-center z-1'>
+                <h1 className='big-title -z-0 relative text-center text-[#505050] font-modern-negra text-[clamp(6rem,1.5441rem_+_19.0118vw,31.25rem)] mt-10 whitespace-nowrap leading-0 absolute left-1/2 -translate-x-1/2'>The ART</h1>
+                <div className='text-white grid md:grid-cols-[auto_1fr_auto] grid-cols-2 gap-5 justify-between items-center z-5 relative mb-5'>
                   <ul className='space-y-2 features-list md:order-1 order-2'>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Handpicked ingredients</li>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Signature techniques</li>
