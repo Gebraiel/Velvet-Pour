@@ -94,7 +94,7 @@ export default function HeroSection() {
             x:-200,
             y:200,
             scrollTrigger:{
-                target:".left-leaf",
+                trigger:".left-leaf",
                 scrub:true
             }
         })
@@ -102,7 +102,7 @@ export default function HeroSection() {
             x:200,
             y:200,
             scrollTrigger:{
-                target:".left-leaf",
+                trigger:".left-leaf",
                 scrub:true
             }
         })
@@ -112,7 +112,6 @@ export default function HeroSection() {
             gsap.to(videoTime,{
                 t:videoRef.current.duration,
                 scrollTrigger:{
-                    target:".video-container video",
                     start:"top top",
                     pin:true,
                     scrub:true,
