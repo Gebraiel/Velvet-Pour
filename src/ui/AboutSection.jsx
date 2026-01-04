@@ -31,6 +31,7 @@ export default function AboutSection() {
         })
     },{scope:aboutSection})
   return (
+    
     <section ref={aboutSection} className='bg-black py-30 '>
         <div className='container'>
             <div className='content-container flex flex-col md:flex-row justify-between gap-5 mb-10'>

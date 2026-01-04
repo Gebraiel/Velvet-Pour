@@ -23,16 +23,16 @@ export default function FeaturesSection() {
       opacity:0,
 
     })
-    .to(".big-title,.features-list",{
-      display:"none"
-    })
-    .fromTo(".grid-container",{
-      gridTemplateColumns:"auto 1fr auto",
-    }
-    ,{
-      gridTemplateColumns:"1fr",
-      duration:0
-    })
+    // .to(".big-title,.features-list",{
+    //   display:"none"
+    // })
+    // .fromTo(".grid-container",{
+    //   gridTemplateColumns:"auto 1fr auto",
+    // }
+    // ,{
+    //   gridTemplateColumns:"1fr!important",
+    //   duration:0
+    // })
     .fromTo(
       '.masked-image',
       {
@@ -53,14 +53,14 @@ export default function FeaturesSection() {
         <section ref={featuresSection} className='radial-bg features-section min-h-screen bg-black py-30 flex justify-center items-center'>
             <div className='container'>
                 <h1 className='big-title -z-0 absolute text-center text-[#505050] font-modern-negra text-[clamp(6rem,1.5441rem_+_19.0118vw,31.25rem)] mt-10 whitespace-nowrap leading-0 absolute left-1/2 -translate-x-1/2'>The ART</h1>
-                <div className='grid-container text-white grid md:grid-cols-[auto_1fr_auto] grid-cols-2 gap-5 justify-between items-center z-5 relative mb-5'>
-                  <ul className='space-y-2 features-list md:order-1 order-2'>
+                <div className='grid-container text-white grid lg:grid-cols-[auto_1fr_auto] grid-cols-1 gap-5 justify-between items-center z-5 relative mb-5'>
+                  <ul className='space-y-2 features-list lg:order-1 order-2'>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Handpicked ingredients</li>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Signature techniques</li>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Bartending artistry in action</li>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Freshly muddled flavors</li>
                   </ul>
-                  <div className='md:col-span-1 col-span-2 md:order-2 order-1 max-w-[500px] m-auto'><img className='masked-image rounded-4xl w-full h-full object-cover' src="/Features/bg-img.jpg" alt="Background Image" /></div>
+                  <div className='lg:col-span-1 col-span-2 lg:order-2 order-1 max-w-[500px] m-auto'><img className='masked-image rounded-4xl w-full h-full object-cover' src="/Features/bg-img.jpg" alt="Background Image" /></div>
                   <ul className='space-y-2 features-list order-3'>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Perfectly balanced blends</li>
                     <li className='flex gap-2 md:text-lg text-xs'><CheckIcon/>Garnished to perfection</li>
